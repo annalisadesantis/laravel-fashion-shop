@@ -9,8 +9,7 @@ class HomeController extends Controller
 {
     public function index(){
         $all_dresses = Dress::all();
-        dd($all_dresses);
-        
+
         $data = [
             'dresses' => $all_dresses
         ];
