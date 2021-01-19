@@ -1,5 +1,6 @@
 header{
     @include flex-row(center,center);
+    background-color: #d3d3d3;
 
     .nav{
 
@@ -10,22 +11,18 @@ header{
                 display: inline-block;
                 margin: $small_space 0px;
                 font-size: $font_size;
-                font-weight: 300;
-                color: $color_base;
+                font-weight: 400;
+
 
                 a{
                     text-decoration: none;
-                    padding: $small_space $big_space ;
-
-                    &.active{
-                        background-color: $color_hover;
-                        color: #444444;
-                    }
+                    padding: $small_space $big_space;
+                    color: $color_text;
 
                     &:hover{
-                        background-color: $color_hover;
-                        color: #444444;
+                        color: #43b3ae;
                     }
+
                 }
             }
         }

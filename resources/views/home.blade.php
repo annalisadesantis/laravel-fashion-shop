@@ -4,21 +4,43 @@
 {{-- contenuti --}}
 @section("content")
     <section id="home">
-        <h1>
-            HomePage
-        </h1>
-        <ul>
-            @foreach ($dresses as $dress)
-                <li>
-                    <p>
-                        {{ $dress->type }}
-                    </p>
-                    <p>Colore: {{ $dress->color }}</p>
-                    <p>Taglia: {{ $dress->size }}</p>
-                    <p>Materiale: {{ $dress->material }}</p>
-                    <p>Prezzo: {{ $dress->price }}</p>
-                </li>
-            @endforeach
-        </ul>
+        <div class="container">
+            <h1>
+                In evidenza
+            </h1>
+            <div class="card-container">
+                @foreach ($dresses as $dress)
+                    <div class="card">
+                        <h2>
+                            {{ $dress->type }}
+                        </h2>
+                        <p>
+                            <strong>
+                                Colore:
+                            </strong>
+                            {{ $dress->color }}
+                        </p>
+                        <p>
+                            <strong>
+                                Taglia:
+                            </strong>
+                            {{ $dress->size }}
+                        </p>
+                        <p>
+                            <strong>
+                                Materiale:
+                            </strong>
+                             {{ $dress->material }}
+                        </p>
+                        <p>
+                            <strong>
+                                Prezzo:
+                            </strong>
+                            {{ $dress->price }} €
+                        </p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     </section>
 @endsection

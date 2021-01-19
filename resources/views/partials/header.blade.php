@@ -2,7 +2,7 @@
     <div class="nav">
         <ul>
             <li>
-                <a href="#">
+                <a href="{{ route('homepage')}}">
                     Home
                 </a>
             </li>
@@ -13,7 +13,7 @@
             </li>
             <li>
                 <a href="#">
-                    News
+                    Shop
                 </a>
             </li>
         </ul>

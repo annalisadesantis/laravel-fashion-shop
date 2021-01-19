@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Teko", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .container {
@@ -17,6 +17,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d3d3d3;
 }
 
 header .nav ul {
@@ -27,34 +28,53 @@ header .nav ul li {
   display: inline-block;
   margin: 10px 0px;
   font-size: 24px;
-  font-weight: 300;
-  color: #001942;
+  font-weight: 400;
 }
 
 header .nav ul li a {
   text-decoration: none;
   padding: 10px 20px;
-}
-
-header .nav ul li a.active {
-  background-color: #B3E5FC;
-  color: #444444;
+  color: #838996;
 }
 
 header .nav ul li a:hover {
-  background-color: #B3E5FC;
-  color: #444444;
+  color: #43b3ae;
 }
 
 #home {
   height: 600px;
   margin-bottom: 20px;
+  background-color: #838996;
 }
 
 #home h1 {
-  color: red;
+  color: #d3d3d3;
   font-size: 30px;
   text-align: center;
   padding-top: 30px;
+}
+
+#home .card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#home .card-container .card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #d3d3d3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+#home .card-container .card p {
+  margin-top: 10px;
 }
 
